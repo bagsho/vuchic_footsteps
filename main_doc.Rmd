@@ -1,0 +1,36 @@
+---
+title: "In the footsteps of Vuchic's Urban Transit"
+author: "Orhan Aktas"
+date: '2022-08-26'
+output:   
+    html_document:
+      df_print: !expr knitr::kable
+      toc: yes
+      number_sections: yes
+      toc_depth: 2
+---
+
+```{r setup, include=FALSE,echo=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  class.source = "bg-warning text-warning"
+)
+```
+
+#### Required Libraries {.unlisted .unnumbered}
+
+```{r libraries, message=FALSE, warning=FALSE}
+library(tidyverse)
+```
+
+# Introduction {.unnumbered}
+
+I have always liked the charts in the Vuchic's legendary urban transit book. I had a privilege to participate translation of this book into Turkish and at the that time I found some time to investigate the charts one by one in some chapters. The visualization standart of these charts are generally very high. What I mean with this is that each chart often is able to show more than one information at the same time. However, the quality of these chart are the opposite and I have had a desire to replicate them. This desire came to the peak after learning ggplot and its visualization potential. Therefore, the ultimate goal of this book is to replicate the most of the charts in this book. Said that, the practical realization of it is to create a chart at a time. I'm planning to continue with the chronological order of the charts in book.
+
+# TRANSIT OPERATIONS AND SERVICE SCHEDULING
+
+## Figure 1.1 Transit line, network and station concepts {.unnumbered}
+
+![](images/figure1-1.png)
